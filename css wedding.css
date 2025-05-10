@@ -1,0 +1,305 @@
+:root {
+    --blue: #20295e;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(0, 0, 0 / 0.5);
+}
+
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Work sans', sans-serif;
+    min-height: 3000px;
+    background-image: url(masangcincin.jpg);
+}
+
+/*modal*/
+.modal-content{
+    font-family: Calibri, sans-serif;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15rem;
+    background-image: url(modal\ bg.jpg)
+
+}
+
+.modal-content button{
+    color: #0a0a0a;
+    background-color: #20295e;
+    box-shadow: 0 3px 3px #CDF5FD;
+}
+
+.modal-content button:hover{
+    background-color: white;
+    color: #20295e;
+}
+
+.modal h1{
+    color: white;
+    font-family: 'pacifico', cursive;
+}
+
+.modal h3{
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+/*Spinner*/
+.spinner-wrapper{  
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 5s;
+}
+
+.spinner-border{
+    height: 60px;
+    width: 60px;
+}
+
+.coco::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(iceland.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: grayscale();
+}
+
+.coco{
+    position: relative;
+    min-height: 100vh;
+}
+.coco h2{
+    font-family: 'Yeseva One', serif;
+    color: white;
+}
+
+.coco h1{
+    font-family: 'charm', cursive;
+    font-size: 6rem;
+    color: white;
+}
+
+.coco h4{
+    font-size: 1.6rem;
+}
+
+.coco p{
+    font-size: 1.6rem;
+    font-family: 'Yeseva One', serif;
+    color: white;
+}
+
+.coco a{
+    color: var(--blue);
+    background-color:ghostwhite ;
+}
+
+.coco a:hover{
+    background-color: var(--blue);
+    color: ghostwhite;
+}
+
+.mynavbar{
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+
+}
+
+.mynavbar .offcanvas{
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand 
+.mynavbar .offcanvas-tittle{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3,9rem;
+}
+
+.mynavbar .nav-link{
+    text-transform: uppercase;
+}
+
+.home{
+    background-image: url(white\ and\ grey.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+
+}
+
+.home h2{
+    font-family: 'Sacramento';
+    color: #222831;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.home h3{
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home p{
+    font-size: 1.1rem;
+}
+
+.home .couple{
+    margin-top: 100px;
+}
+
+.home .couple h3{
+    font-family: 'Sacramento';
+    font-size: 2.4rem;
+    color: var(--blue)
+}
+
+.home .couple img{
+    width: 100%;
+}
+
+/*css audio*/
+ .audio-icon-wrapper {
+     width: 4rem;
+     height: 4rem;
+     font-size: 4rem;
+     position: fixed;
+     bottom: 2.5rem;
+     right: 2rem;
+     cursor: pointer;
+     color: white;
+     opacity: 0.5;
+     mix-blend-mode: difference;
+     animation: rotating 4s linear infinite;
+     transform-origin: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     line-height: 0;
+ }
+ @keyframes rotating {
+     from {
+         transform: rotate(0);
+     }
+     to {
+         transform: rotate(360deg);
+      }
+ }
+
+.info{
+    background-color: #DFDFDE;
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.info h2{
+    color: var(--blue);
+    font-family: 'sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.info .alamat{
+    color: #0a0a0a;
+    font-size: 1.1rem;
+}
+
+.info .description{
+    color: #0a0a0a;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.info .card{
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: black !important;
+    border: 1px solid black;
+}
+
+.info .card-header{
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .card-body{
+font-size: 1rem;
+}
+
+.info .card-footer{
+    border-top: 1px solid black;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.rsvp h2{
+    font-family: 'Sacramento';
+    color: var(--blue);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.rsvp p{
+    font-size: 1 rem;
+    font-weight: 300;
+    color: black;
+}
+
+.rsvp{
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    background-color: #C8C6C6;
+}
+
+.rsvp button{
+    background-color: #222831;
+    color: white;
+}
+
+
+.rsvp button{
+    background-color: white;
+    color: #222831;
+}
+
+
+/*Media query*/
+/*Laptop*/
+@media (max-width : 992px){
+    html{
+        font-size: 75%;
+    }
+}
+
+/*Tablet*/
+@media (max-width: 768px){
+    html{
+        font-size: 60%;
+    }
+}
+
+/*Phone*/
+@media (max-width: 576px){
+    html{
+        font-size: 50%;
+    }
+}

@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wedding Invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm&family=Playpen+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css wedding.css">
+
+
+   </head>
+
+
+  <body>    
+    <center>
+    <!--script modal-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+        $("#modalku").modal('show');
+    });
+  </script>
+<div id="modalku" class="modal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 style="text-align: center;" class="modal-title">Ashley & Mark Wedding</h1>
+                </div>
+                <div class="modal-body">
+                <h3 style="text-align: center;">Marriage is the golden ring in a chain whose beginning is a glance and whose ending is Eternity </h3>
+                <h3>- Khalil Gibran</h3>
+                  <p><button type="button" class="btn btn-dark" data-bs-dismiss="modal">Open Invitation</button>
+                  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </center>
+
+<!--Home-->
+    <section id="coco" class="coco w-100 h-100 p-3 mx-auto text-center d-flex 
+    justify-content-center align-items-center text white">
+        <div>
+            <h2> The wedding of</h2>
+            <h1>Ashley & Mark</h1>
+            <p>Kepada Yth :
+            <span id="depan"></span>
+            <span id="tengah"></span>
+            </p>
+            <a href="#undangan" class="btn btn-lg-mt4">Lihat undangan</a>
+            <audio autoplay loop>
+              <source src="Maisie_Peters_-_Feels_Like_This_Lyrics.mp3" type="audio/mp3">
+            </audio>
+                 <div class="audio-icon-wrapper">
+                   <i class="bi bi-disc"></i>
+                 </div>
+            
+           
+            <div class="spinner-wrapper">
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+            <script src="js wedding.js"></script>
+              <script>
+               function GetURLParameter(sParam){
+                var sPageURL = window.location.search.substring(1);
+                var sURLVariables = sPageURL.split('&');
+                for (var i = 0; i < sURLVariables.length; i++)
+                {
+                  var sParameterName = sURLVariables[i].split('=');
+                  if (sParameterName[0] == sParam)
+                  {
+                      return sParameterName[1];
+
+                  }
+                }
+              }
+              var depan = GetURLParameter('depan');
+              var tengah = GetURLParameter('tengah');
+              document.getElementById("depan").innerHTML = depan;
+              document.getElementById("tengah").innerHTML = tengah;
+            </script>
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+            crossorigin="anonymous"></script>
+          
+  </section>
+
+  <!--Navbar-->
+  <section id="undangan" class="undangan"> </section>
+  <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ashley & Mark</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
+      data-bs-target="#offcanvasNavbar" 
+      aria-controls="offcanvasNavbar" 
+      aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ashley & Mark</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link " href="#home">Home</a>
+              <a class="nav-link" href="#info">Informasi</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--Foto mempelai-->
+  <section id="home" class="home">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2>The Royal Wedding</h2>
+          <h3>Diselenggarakan pada 26 November 2034 di Yogyakarta, Jawa Tengah</h3>
+          <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, 
+            Saudara/i, untuk hadir pada acara pernikahan kami</p>
+        </div>
+      </div>
+
+      <div class="row couple">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-8 text-end">
+              <h3>Mark Santiago</h3>
+              <p>Lulusan biasa dari Yale University, seorang yang inovatif dan senantiasa menjadi teman bagi semua orang di sekitarnya. 
+                Di usia 24 tahun tepat akhirnya hatinya bertaut kepada seorang gadis yang dari dulu dinanti sejak jaman kuliah.
+              </p>
+                <p>Putra dari Bpk. Budi <br> dan <br> Ibu Rini</p>
+            </div>
+            <div class="col-4">
+              <img src="rsz_male_pics.jpg" alt="Mark" class="img-responsive rounded-circle">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-4">
+              <img src="rsz_1women.jpg" alt="Mark" class="img-responsive rounded-circle">
+            </div>
+            <div class="col-8 text-end">
+              <h3>Ophelia Ashley</h3>
+              <p>Gadis anggun dan brilian tamatan Massachusetts Institute of Technology, selalu semangat dalam mencapai cita-citanya dan menolong orang orang di sekitarnya. 
+                21 tahun mengarungi kehidupan sendirian, kini menemukan orang yang akan menyokongnya setiap saat</p>
+                <p>Putri dari Bpk. Andi <br> dan <br> Ibu Dinda</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--Informasi-->
+  <section id="info" class="info">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Informasi acara</h2>
+          <p class="alamat">Alamat: Hotel Amanjiwo <br> Sawah, Majaksingi, Borobudur, Magelang Regency, Central Java</p>
+          <a href="https://maps.app.goo.gl/LAjpDjmv39BWrFTv8" target="_blank" class="btn btn-light btn-sm">Klik untuk membuka peta</a>
+        </div>
+      </div>
+
+      <!----Card-->
+      <div class="row justify-content-center mt-4">
+       <div class="col-md-5 col-10">
+        <div class="card text-center text-bg-light mb-5">
+          <div class="card-header">
+            Akad Nikah
+          </div>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <span>08.00 - 12.00</span>
+              </div>
+              <div class="col-md-6">     
+                <span>Minggu 26 November 2033</span>
+              </div>
+            </div>
+            </div>
+          <div class="card-footer">
+            Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan 
+            seluruh prosesi
+          </div>
+        </div>
+       </div>
+       <div class="col-md-5 col-10">
+        <div class="card text-center text-bg-light">
+          <div class="card-header">
+           Resepsi
+          </div>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <span>12.30 - selesai</span>
+              </div>
+              <div class="col-md-6">     
+                <span>Minggu 26 November 2033</span>
+              </div>
+            </div>
+            </div>
+          <div class="card-footer">
+            Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan 
+            seluruh prosesi
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!--RSVP-->
+  <section id="rsvp" class="rsvp">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Konfirmasi Kehadiran</h2>
+          <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+        </div>
+      </div>
+
+      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center">
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="nama" class="form-label">Nama</label>
+          <input type="text" class="form-control" id="nama" name="nama">
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="jumlah" class="form-label">jumlah</label>
+            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="1" length="1" value="1">
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="Status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="1">Hadir</option>
+                <option value="0">Tidak hadir</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary">Kirim</button>
+            </div>
+      </form>
+</div>
+
+  </section>
+            
+</body>
+</html>
